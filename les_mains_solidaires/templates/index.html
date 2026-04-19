@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Les Mains Solidaires – EST Tétouan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <img src="{{ url_for('static', filename='logo_club.jpg') }}" alt="Logo Les Mains Solidaires" />
+    Les Mains Solidaires
+  </div>
+  <div class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#mission">Mission</a>
+    <a href="#event">Événements</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="uni-strip">
+    <img src="{{ url_for('static', filename='logo_uae.png') }}" alt="Université Abdelmalek Essaâdi" />
+    <div class="uni-divider"></div>
+    <img src="{{ url_for('static', filename='logo_est.png') }}" alt="EST Tétouan" />
+    <div class="uni-divider"></div>
+    <span class="uni-label">EST Tétouan · Université Abdelmalek Essaâdi</span>
+  </div>
+
+  <div class="club-logo-wrap">
+    <img src="{{ url_for('static', filename='logo_club.jpg') }}" alt="Les Mains Solidaires" />
+  </div>
+
+  <h1 class="hero-title">Les Mains<br/><span>Solidaires</span></h1>
+  <p class="hero-sub">Vers l'incarnation des valeurs de bienfaisance</p>
+
+  <div class="hero-badges">
+    <span class="badge">Solidarité</span>
+    <span class="badge">Entraide</span>
+    <span class="badge">Espoir</span>
+    <span class="badge">EST Tétouan</span>
+  </div>
+
+  <a href="#mission" class="cta-btn">Découvrir notre club</a>
+
+  <svg class="hero-wave" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f4f9fb"/>
+  </svg>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="big-quote">"</div>
+          <p>Notre club naît d'une conviction simple : chaque geste de solidarité, aussi petit soit-il, peut transformer une vie et illuminer une communauté entière.</p>
+          <div class="stat-row">
+            <div class="stat">
+              <div class="stat-num">33+</div>
+              <div class="stat-label">Membres</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">1</div>
+              <div class="stat-label">Événement</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Impact humain</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag">Qui sommes-nous</span>
+        <h2 class="section-title">Un club au cœur de <span>l'EST Tétouan</span></h2>
+        <p class="section-lead">Club étudiant rattaché à l'École Supérieure de Technologie de Tétouan, sous l'égide de l'Université Abdelmalek Essaâdi, nous rassemblons des étudiants engagés pour le bien commun.</p>
+        <ul class="value-list">
+          <li>
+            <div class="value-icon">🤝</div>
+            <div><strong>Solidarité</strong> – Nous agissons ensemble pour soutenir les populations vulnérables de Tétouan et ses environs.</div>
+          </li>
+          <li>
+            <div class="value-icon">💡</div>
+            <div><strong>Engagement citoyen</strong> – Former des étudiants responsables et sensibles aux enjeux sociaux.</div>
+          </li>
+          <li>
+            <div class="value-icon">❤️</div>
+            <div><strong>Bienfaisance</strong> – Chaque action porte en elle la promesse d'un monde meilleur.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MISSION -->
+<section id="mission">
+  <div class="section-inner">
+    <span class="section-tag">Ce que nous faisons</span>
+    <h2 class="section-title">Notre <span>Mission</span></h2>
+    <p class="section-lead">Nous croyons que la solidarité s'apprend et se pratique. Voici les piliers de notre engagement.</p>
+    <div class="cards-grid">
+      <div class="mission-card">
+        <div class="card-icon">🏥</div>
+        <div class="card-title">Visites humanitaires</div>
+        <p class="card-text">Nous organisons des visites aux orphelinats, maisons de retraite et centres d'accueil pour apporter présence, dons et réconfort.</p>
+      </div>
+      <div class="mission-card">
+        <div class="card-icon">📦</div>
+        <div class="card-title">Collectes de dons</div>
+        <p class="card-text">Mobilisation d'étudiants et du personnel universitaire pour collecter vêtements, nourriture et fournitures scolaires.</p>
+      </div>
+      <div class="mission-card">
+        <div class="card-icon">🌱</div>
+        <div class="card-title">Sensibilisation</div>
+        <p class="card-text">Ateliers, campagnes et événements pour éveiller les consciences sur les inégalités sociales et encourager l'action citoyenne.</p>
+      </div>
+      <div class="mission-card">
+        <div class="card-icon">🎓</div>
+        <div class="card-title">Formation & Leadership</div>
+        <p class="card-text">Développer des compétences humaines et organisationnelles chez nos membres pour en faire des acteurs du changement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT -->
+<section id="event">
+  <div class="section-inner">
+    <span class="section-tag">Prochain événement</span>
+    <h2 class="section-title">Visite à <span>l'Orphelinat</span></h2>
+    <div class="event-box">
+      <div class="event-info">
+        <span class="event-label">Événement · Mars 2026</span>
+        <div class="event-title">Visite à l'Orphelinat Boussafo – Tétouan</div>
+        <div class="event-details">
+          <div class="event-detail"><span>📅</span> 17 Mars 2026</div>
+          <div class="event-detail"><span>🕔</span> 17h00 – 21h00</div>
+          <div class="event-detail"><span>📍</span> Orphelinat Boussafo, Tétouan</div>
+          <div class="event-detail"><span>📞</span> 0770 799 397</div>
+          <div class="event-detail"><span>🎁</span> Participez avec un don pour soutenir les orphelins</div>
+        </div>
+      </div>
+      <div class="event-cta">
+        <div class="event-date-badge">
+          <div class="day">17</div>
+          <div class="month">Mars 2026</div>
+        </div>
+        <a href="#contact" class="join-btn">Rejoignez-nous</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <span class="section-tag teal-light">Nous rejoindre</span>
+    <h2 class="section-title white">Contactez-<span>nous</span></h2>
+    <p class="section-lead muted-light">Vous souhaitez rejoindre le club ou en savoir plus ? Écrivez-nous.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item"><div class="ci-icon">📍</div><span>École Supérieure de Technologie, Tétouan, Maroc</span></div>
+        <div class="contact-item"><div class="ci-icon">📞</div><span>0770 799 397</span></div>
+        <div class="contact-item"><div class="ci-icon">📱</div><span>@lesmains_solidaires (Instagram)</span></div>
+        <div class="contact-item"><div class="ci-icon">🏛️</div><span>Université Abdelmalek Essaâdi</span></div>
+      </div>
+      <form class="contact-form" action="/contact" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+        <textarea name="message" placeholder="Votre message…" required></textarea>
+        <button type="submit">Envoyer le message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logos">
+    <img src="{{ url_for('static', filename='logo_uae.png') }}" alt="Université Abdelmalek Essaâdi" class="footer-uni-logo" />
+    <img src="{{ url_for('static', filename='logo_est.png') }}" alt="EST Tétouan" class="footer-uni-logo" />
+    <img src="{{ url_for('static', filename='logo_club.jpg') }}" alt="Les Mains Solidaires" class="footer-club-logo" />
+  </div>
+  <p class="footer-text">
+    <strong>Club Les Mains Solidaires</strong> · EST Tétouan · Université Abdelmalek Essaâdi<br/>
+    © 2026 — Vers l'incarnation des valeurs de bienfaisance
+  </p>
+</footer>
+
+</body>
+</html>
