@@ -26,5 +26,5 @@ def contact():
     return redirect(url_for("index") + "#contact")
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     app.run(debug=True)
